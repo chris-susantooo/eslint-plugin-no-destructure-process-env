@@ -1,6 +1,6 @@
 # eslint-plugin-no-destructure-process-env
 
-Plugin to disallow destructuring from process.env. process.env.\* could be statically replaced at build time, such as in Next.js or Vite.js projects, which means process.env is not a standard JavaScript object.
+Plugin to disallow destructuring from `process.env`. `process.env.*` could be statically replaced at build time, such as in Next.js or Vite.js projects, which means `process.env` is not a standard JavaScript object. In that case, it is equivalent to trying to destructuring from `undefined`.
 
 ## Installation
 
