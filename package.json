@@ -1,0 +1,34 @@
+{
+  "name": "eslint-plugin-no-destructure-process-env",
+  "version": "0.0.0",
+  "description": "Plugin to disallow destructuring from process.env. process.env.* could be statically replaced at build time, such as in Next.js or Vite.js projects, which means process.env is not a standard JavaScript object.",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin"
+  ],
+  "author": "Chris Susanto",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "mocha tests --recursive"
+  },
+  "dependencies": {
+    "requireindex": "^1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-eslint-plugin": "^4.0.1",
+    "eslint-plugin-node": "^11.1.0",
+    "mocha": "^9.1.3",
+    "prettier": "^2.5.1"
+  },
+  "engines": {
+    "node": "12.x || 14.x || >= 16"
+  },
+  "peerDependencies": {
+    "eslint": ">=6"
+  },
+  "license": "ISC"
+}
